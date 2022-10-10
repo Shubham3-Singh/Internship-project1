@@ -1,0 +1,46 @@
+.header {
+  padding: 20px;
+  &--main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar {
+      display: flex;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+        position: fixed;
+        top: 124px;
+        z-index: 3;
+        right: 15px;
+        background-color: black;
+        color: white;
+        font-size: 34px;
+        padding: 33px;
+        line-height: 2;
+        &.active {
+          display: block;
+        }
+      }
+
+      li {
+        margin-right: 20px;
+
+        :last-child() {
+          margin-right: 0px;
+        }
+      }
+    }
+    &-hamburger {
+      display: flex;
+      flex-direction: column;
+      width: 50px;
+      .ham {
+        width: 39px;
+        height: 5px;
+        margin: 5px 0px;
+      }
+    }
+  }
+}

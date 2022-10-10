@@ -1,0 +1,307 @@
+.container {
+  &--banner {
+    position: relative;
+
+    .mobileImage {
+      width: 100%;
+    }
+
+    .texts1 {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      z-index: 1;
+      top: 158px;
+      left: 140px;
+
+      @media screen and (max-width: 768px) {
+        width: 60%;
+        top: 223px;
+      }
+
+      .txt1 {
+        line-height: 1;
+
+        @media screen and (max-width: 768px) {
+          font-size: 55px;
+        }
+      }
+
+      .txt2 {
+        line-height: 3;
+
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+
+      .txt3 {
+        border-radius: 30px;
+        padding: 10px;
+        width: 20%;
+
+        @media screen and (max-width: 768px) {
+          font-size: 17px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  &--details {
+    padding: 39px 0px;
+    .contentCard {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 45px;
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .card1 {
+        padding: 14px px;
+        border-radius: 29px;
+        margin-right: 10px;
+        min-height: 245px;
+        margin-top: 60px;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 70px;
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+
+        .photo1 {
+          margin-top: -36px;
+        }
+
+        .info {
+          display: block;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  &--ourServices {
+    padding-bottom: 50px;
+  }
+}
+
+.container {
+  &--productMain {
+    padding-bottom: 39px;
+  }
+  &--product {
+    .products {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .side1 {
+        width: 25%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        .categeory {
+          .catBox {
+            padding-bottom: 37px;
+            
+            h3 {
+              &:hover:before {
+                content: "";
+                border-left: 3px solid black;
+                padding-right: 5px;
+              }
+              @media screen and (max-width: 768px) {
+                display: inline-block;
+              }
+            }
+
+            @media screen and (max-width: 768px) {
+              padding: 15px;
+              background-color: #f8f8f8b0;
+              margin: 10px 0px;
+              position: relative;
+            }
+
+            i {
+              position: absolute;
+              right: 30px;
+            }
+
+            .details2 {
+              width: 121%;
+              padding: 40px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+      .side2 {
+        width: 60%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        .details1 {
+          width: 121%;
+          padding: 40px;
+          border-radius: 15px;
+
+          @media screen and (max-width: 768px) {
+            
+          }
+
+          @media (max-width: 1024px) and (orientation: landscape) {
+            left: -159px;
+          }
+
+          p {
+            @media screen and (max-width: 768px) {
+              font-size: 25px;
+            }
+          }
+          .unorder1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 33px;
+            li {
+              width: calc(35% - 20px);
+              padding-bottom: 27px;
+
+              @media screen and (max-width: 768px) {
+                width: calc(52% - 20px);
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  &--service {
+  }
+  &--clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .cLogo {
+      width: calc(16% - 20px);
+      padding-bottom: 30px;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        width: calc(45% - 20px);
+      }
+
+      @media (max-width: 1024px) and (orientation: landscape) {
+        width: calc(33% - 20px);
+      }
+    }
+  }
+}
+
+.container {
+  &--formInput {
+    padding: 39px 0px;
+    .formArea {
+      text-align: center;
+      .inputCommon {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .userInput {
+          width: 32%;
+          display: flex;
+          flex-direction: column;
+
+          .input {
+            border-radius: 30px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+          }
+
+          .nameError,
+          .phoneError,
+          .emailError {
+            margin-top: 10px;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            margin: 22px 0px;
+            padding: 0px 10px;
+          }
+
+          &::placeholder {
+            color: black;
+          }
+        }
+      }
+
+      .userQuery {
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin: 22px 0px;
+          padding: 0px 10px;
+        }
+
+        &::placeholder {
+          color: black;
+        }
+
+        .input {
+          border: none;
+          text-align: center;
+          border-radius: 30px;
+          padding: 10px 20px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          width: 100%;
+
+          @media screen and (max-width: 768px) {
+            text-align: left;
+          }
+        }
+      }
+
+      .submit {
+        border-radius: 30px;
+        padding: 10px;
+        width: 18%;
+        margin: 27px 0px;
+      }
+    }
+  }
+}
